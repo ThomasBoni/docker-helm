@@ -1,8 +1,8 @@
 FROM lachlanevenson/k8s-helm:v2.14.1
 
-ENV HELM_HOME /home/helm
-ENV KUBECTL_VERSION v1.15.0
+ARG KUBECTL_VERSION=v1.15.0
 
+ENV HELM_HOME /home/helm
 WORKDIR /home/helm
 
 # Upgrade & requirements installation
